@@ -107,19 +107,19 @@ const QuizGame = props => {
   }
 
   const renderFailureView = () => (
-    <div className='failure-view-container'>
+    <div className="failure-view-container">
       <img
-        src='https://assets.ccbp.in/frontend/react-js/nxt-assess-failure-img.png'
-        alt='failure view'
-        className='failure-view-image'
+        src="https://assets.ccbp.in/frontend/react-js/nxt-assess-failure-img.png"
+        alt="failure view"
+        className="failure-view-image"
       />
-      <h1 className='failure-view-heading'>Something went wrong</h1>
-      <p className='failure-view-paragraph'>
+      <h1 className="failure-view-heading">Something went wrong</h1>
+      <p className="failure-view-paragraph">
         Our servers are busy please try again
       </p>
       <button
-        type='button'
-        className='failure-view-button'
+        type="button"
+        className="failure-view-button"
         onClick={onClickRetryButton}
       >
         Retry
@@ -128,8 +128,8 @@ const QuizGame = props => {
   )
 
   const renderLoadingView = () => (
-    <div className='loader-container' testid='loader'>
-      <Loader type='ThreeDots' color='#263868' height={50} width={50} />
+    <div className="loader-container" testid="loader">
+      <Loader type="ThreeDots" color="#263868" height={50} width={50} />
     </div>
   )
 
@@ -179,24 +179,24 @@ const QuizGame = props => {
 
         return (
           <>
-            <div className='top-quiz-container'>
-              <div className='question-number-time-container'>
-                <div className='question-container'>
-                  <p className='question'>Question</p>
-                  <p className='question-number'>
+            <div className="top-quiz-container">
+              <div className="question-number-time-container">
+                <div className="question-container">
+                  <p className="question">Question</p>
+                  <p className="question-number">
                     {currentQuestion + 1}/{data.length}
                   </p>
                 </div>
-                <div className='time-container'>
-                  <p className='timer'>{timeLeft}</p>
+                <div className="time-container">
+                  <p className="timer">{timeLeft}</p>
                 </div>
               </div>
-              <div className='question-name-container'>
-                <p className='question-name'>
+              <div className="question-name-container">
+                <p className="question-name">
                   {data[currentQuestion].questionText}
                 </p>
                 {data[currentQuestion].optionsType === 'DEFAULT' && (
-                  <ul className='answer-section'>
+                  <ul className="answer-section">
                     {data[currentQuestion].options.map(eachAnswer => (
                       <QuizAnswer
                         answerDetails={eachAnswer}
@@ -209,7 +209,7 @@ const QuizGame = props => {
                   </ul>
                 )}
                 {data[currentQuestion].optionsType === 'IMAGE' && (
-                  <ul className='answer-section'>
+                  <ul className="answer-section">
                     {data[currentQuestion].options.map(eachAnswer => (
                       <ImageAnswer
                         answerDetails={eachAnswer}
@@ -222,7 +222,7 @@ const QuizGame = props => {
                   </ul>
                 )}
                 {data[currentQuestion].optionsType === 'SINGLE_SELECT' && (
-                  <ul className='single-select-answer-section'>
+                  <ul className="single-select-answer-section">
                     {data[currentQuestion].options.map(eachAnswer => (
                       <SingleSelectAnswer
                         answerDetails={eachAnswer}
@@ -236,12 +236,12 @@ const QuizGame = props => {
                 )}
               </div>
             </div>
-            <div className='next-question-container'>
+            <div className="next-question-container">
               <button
                 className={
                   showNextQuestion ? 'next-question nxtHover' : 'next-question'
                 }
-                type='button'
+                type="button"
                 onClick={onClickNextQuestion}
               >
                 {currentQuestion === data.length - 1
@@ -269,11 +269,11 @@ const QuizGame = props => {
   }
 
   return (
-    <div className='quizGame-app-container'>
+    <div className="quizGame-app-container">
       <Header />
       {data.length > 0 && (
         <>
-          <div className='quizGame-container'>
+          <div className="quizGame-container">
             {renderApiStatusView(apiStatus)}
           </div>
         </>
