@@ -1,0 +1,156 @@
+.bg-container {
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #d8bfd0,
+    #b7b1d5
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-app-container {
+  background-color: #f8fafc;
+  height: 592px;
+  width: 328px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-app-container {
+    padding: 30px;
+    width: 60%;
+    min-height: 600px;
+  }
+}
+
+.logo-image {
+  width: 96px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 304px;
+  min-height: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    width: 410px;
+    min-height: 254px;
+    padding: 0px;
+  }
+}
+
+.username-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.label {
+  color: #7e858e;
+  font-weight: 700;
+  font-family: 'Roboto';
+  size: 14px;
+}
+
+.input {
+  border: 1px solid #d7dfe9;
+  background-color: #ffffff;
+  width: 304px;
+  height: 40px;
+  border-radius: 12px;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #263868;
+  padding-left: 10px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    height: 40px;
+    width: 340px;
+  }
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 10px;
+  width: 124px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-container {
+    margin-right: 30px;
+  }
+}
+
+.checkbox {
+  height: 16px;
+  width: 16px;
+}
+
+.checkbox-label {
+  margin-left: 10px;
+  color: #000000;
+  font-size: 14px;
+  font-family: 'HK Grotesk';
+  font-weight: 400;
+}
+
+.login-button {
+  background-color: #0ea5e9;
+  width: 304px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-button {
+    width: 340px;
+    height: 40px;
+  }
+}
+
+.error-msg {
+  color: #ef4444;
+  font-family: 'Roboto';
+  font-size: 14px;
+}

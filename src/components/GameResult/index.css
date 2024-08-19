@@ -1,0 +1,133 @@
+.quiz-result-app-container {
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #d8bfd0,
+    #b7b1d5
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz-result-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/quiz-game-congrats-card-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 85%;
+  min-height: 80vh;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.won-image {
+  width: 164px;
+  height: 164px;
+}
+
+.congrats-text {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .congrats-text {
+    font-size: 32px;
+  }
+}
+
+.win-percentage-text {
+  color: #0ea5e9;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .win-percentage-text {
+    font-size: 32px;
+  }
+}
+
+.quiz-complete-text {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .quiz-complete-text {
+    font-size: 24px;
+  }
+}
+
+.quiz-attempt-report {
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .quiz-attempt-report {
+    font-size: 18px;
+  }
+}
+
+.report-button {
+  background-color: #0ea5e9;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  height: 40px;
+  width: 86px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.quiz-fail-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 85%;
+  min-height: 80vh;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  line-height: 2;
+}
+
+.fail-image {
+  width: 180px;
+  height: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .fail-image {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+.fail-text {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .fail-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

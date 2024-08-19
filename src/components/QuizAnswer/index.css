@@ -1,0 +1,46 @@
+.answer-items {
+  list-style-type: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-button {
+  width: 221px;
+  height: 48px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #cbd5e1;
+  color: #334155;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .answer-button {
+    width: 380px;
+    height: 64px;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+}
+
+.correct {
+  background-color: #1c944b;
+  color: #f8fafc;
+}
+
+.wrong {
+  background-color: #bf2626;
+  color: #f8fafc;
+}
+
+.correct-icon-image {
+  width: 25px;
+  height: 25px;
+}

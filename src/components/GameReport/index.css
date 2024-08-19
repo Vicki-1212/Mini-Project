@@ -1,0 +1,188 @@
+.game-report-app-container {
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #d8bfd0,
+    #b7b1d5
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-report-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 85%;
+  min-height: 80vh;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  line-height: 1;
+}
+
+.game-report-result-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .game-report-result-container {
+    line-height: 2.5;
+    width: 70%;
+  }
+}
+
+.game-report-result-mark-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border: 8px solid #0ea5e9;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .game-report-result-mark-container {
+    width: 166px;
+    height: 166px;
+  }
+}
+
+.your-mark {
+  color: #0ea5e9;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .your-mark {
+    font-size: 48px;
+  }
+}
+
+.divide-break {
+  color: #475569;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .divide-break {
+    font-size: 48px;
+  }
+}
+
+.total-mark {
+  color: #475569;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .total-mark {
+    font-size: 48px;
+  }
+}
+
+.game-report-correct-wrong-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.answer-check-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.answer-check-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.quiz-result {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .quiz-result {
+    font-size: 20px;
+  }
+}
+
+.unattempted-question-heading {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .unattempted-question-heading {
+    font-size: 32px;
+  }
+}
+
+.no-unAttemptedQuestionView-container {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.unAttempted-paragraph {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .unAttempted-paragraph {
+    font-size: 32px;
+  }
+}
+
+.unattempted-question-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  font-family: 'Roboto';
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .unattempted-question-text {
+    font-size: 24px;
+  }
+}
+
+.game-unattempted-question-container {
+  padding-left: 20px;
+}
+
+.hover {
+  background-color: #1c944b;
+  color: #f8fafc;
+}

@@ -1,0 +1,21 @@
+.image-answer-items {
+  list-style-type: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-answer-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.answer-image {
+  width: 250px;
+  height: 70px;
+  margin: 24px;
+}
